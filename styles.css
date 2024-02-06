@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-section {
+  /* width: 1200px; */
+  height: 650px;
+  background-image: url("images/farm.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta {
+  font-size: 2rem;
+  padding: 4px 6px;
+  background-color: #902fdc;
+  color: #f4ecec;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.cta:hover {
+  color: #0a0a0a;
+}
+
+.cta-description {
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 6px 8px;
+  background-color: #fff;
+  color: #0a0a0a;
+  box-shadow: 0px 0px 0px 3px #207644;
+}
+
+.services {
+  margin-top: 0;
+  background-color: #a7dd9e;
+  min-height: 400px;
+}
+
+.services-description {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 6px 8px;
+  background-color: #fff;
+  color: #0a0a0a;
+  box-shadow: 0px 0px 0px 3px #207644;
+  width: 50%;
+}
+
+.flex-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #0a0a0a;
+  /* gap: 16px; */
+}
+
+.flex-item-1,
+.flex-item-2,
+.flex-item-3,
+.flex-item-4 {
+  display: inline;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  padding: 8px 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.flex-item-1 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.flex-item-2 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.flex-item-3 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.flex-item-4 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.item-description {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.item-title {
+  text-align: left;
+}
+
+.guide {
+  margin: 0 auto;
+  background-color: #9486ec;
+  width: 700px;
+  min-height: 470px;
+
+  border-bottom: 4px solid #0a0a0a;
+}
+
+.guide-flex {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.guide-img {
+  width: 300px;
+}
+
+.guide-img img {
+  width: 270px;
+  margin: 2rem 1rem;
+  border-radius: 6px;
+}
+.guide-details {
+  margin: 1rem;
+}
+.guide-details h3 {
+  color: #f4ecec;
+  font-size: 2rem;
+}
+
+.guide-details p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .guide {
+    width: 500px;
+  }
+  .guide-flex {
+    flex-direction: column;
+  }
+
+  .guide-img {
+    width: 240px;
+  }
+
+  .guide-img img {
+    width: 200px;
+    /* margin: 1rem 1rem; */
+    border-radius: 6px;
+  }
+
+  .guide-details h3 {
+    margin: 0;
+    color: #f4ecec;
+    font-size: 1.5rem;
+  }
+
+  .hero-section {
+    background-image: url("images/farm-reponsive.jpg");
+  }
+}
